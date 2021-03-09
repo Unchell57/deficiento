@@ -22,7 +22,7 @@
 }
 html {
 	font-size: 1px;
-	/*overflow-x: hidden;*/
+	overflow-x: hidden;
 }
 body {
 	padding: 0 50rem;
@@ -207,7 +207,7 @@ nav ul {
 .post {
 	float: left;
 	box-sizing: border-box;
-	width: 360px !important;
+	max-width: 360px !important;
 	position: relative;
 	font-size: 30px;
 	background-color: #fff;
