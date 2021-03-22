@@ -22,7 +22,7 @@
 }
 html {
 	font-size: 1px;
-	overflow-x: hidden;
+	/*overflow-x: hidden;*/
 }
 body {
 	padding: 0 50rem;
@@ -43,9 +43,6 @@ body {
 	font: 400 22rem/29.54rem hindSB;
 	text-transform: uppercase;
 	letter-spacing: 3.6px;
-}
-#head-header img {
-	margin-right: .3em;
 }
 nav ul {
 	display: none;
@@ -74,8 +71,8 @@ nav ul {
 .socnet {
 	color: #ffffff;
 	font-size: 20rem;
-	line-height: 8px;
-	transform: translateY(140%);
+	line-height: 8rem;
+	transform: translateY(100%);
 
 	transition: color .2s;
 }
@@ -93,6 +90,7 @@ nav ul {
 	box-sizing: border-box;
 	width: 100%; min-height: 580px;
 }
+
 .slider-head {
 	position: absolute;
 	top: 39%;left: 6%;
@@ -116,26 +114,26 @@ nav ul {
 	letter-spacing: 2.8px;
 	max-width: 100%;
 
-	transform: rotate(-90deg) translate(19vw, 43vw);
+	position: absolute;
+	top: 44%; left: 87%;
+	transform: rotate(-90deg);
 }
 .slider-title {
-	display: inline-block;
-	margin: 0 5px;
 	white-space: nowrap;
+}
+.slider-title-text {
+	padding: 0 5rem;
 }
 .slider-imgl {
 	width: 100%;
-	margin: 0 auto;
 	position: relative;
-	left: 7.5em;
+	left: calc(50% - 9%);
 }
 .img-cube {
 	display: inline-block;
 	height: 8px; width: 8px;
 	border: 1px solid #fff;
 	background: transparent;
-	padding: 0;
-	text-decoration: none;
 }
 .img-cube:hover {
 	background: #666;
@@ -153,10 +151,7 @@ nav ul {
 }
 /* ----------
 	FORM
------------*/
-.newsletter {
-	transform: translateY(478em);
-} 
+-----------*/ 
 .newsletter form {
 	display: flex;
 	background: #f7f7f7;
@@ -175,6 +170,15 @@ nav ul {
 	margin-right: 15rem;
 	font: 300 16rem/24rem hindRG;
 	letter-spacing: 1.5rem;
+}
+.newsletter input::placeholder {
+	transition: .3s;
+}
+.newsletter input:focus::placeholder {
+	font-size: 10rem;
+	line-height: 14rem;
+	transform: translateY(-85%);
+	opacity: 1;
 }
 .newsletter input:first-of-type {
 	margin-left: 35rem;
@@ -620,6 +624,12 @@ nav ul {
 
 /* 2400px */
 @media screen and (min-width: 2401px) {
+	.slider-menu {
+		left: 93%;
+	}
+	.intro {
+		background-size: 100%;
+	}
 	.about .writing {
 		font-size: 58rem;
 	}
@@ -638,13 +648,11 @@ nav ul {
 /* 1441px */
 
 @media screen and (max-width: 1441px) {
-	.newsletter {
-		transform: translateY(613%);
-	}
+	
 }
 /* 1025px */
 
-@media screen and (max-width: 1079px) {
+@media screen and (max-width: 1080px) {
 	html{
 		font-size: 1px;
 	}
@@ -652,7 +660,7 @@ nav ul {
 		background: linear-gradient(to top, #f9f9fb 0%, #f9f9fb 94%, #212429 6%);
 	}
 	.slider-menu {
-		transform: rotate(-90deg) translate(6vw, 41vw);
+		left: 83%;
 	}
 	.about .writing {
 		font-size: 23rem;
@@ -661,21 +669,16 @@ nav ul {
 /* 982px */
 
 @media screen and (max-width: 979px) {
-	.newsletter {
-    	transform: translateY(577%);
-	}
+	
 }
 /* 769px */
 
 @media screen and (max-width: 769px) {
-	.slider-menu {
-		transform: rotate(-90deg) translate(-9vw, 39vw);
-	}
 	html {
 		font-size: .8px;
 	}
-	.newsletter {
-		transform: translateY(730%);
+	.slider-menu {
+		left: 80%;
 	}
 	#posts {
 		margin-top: 200rem;
@@ -689,25 +692,28 @@ nav ul {
 /* 426px */
 
 @media screen and (max-width: 426px) {
-	.slider-menu {
-	transform: translate(28%, 1503%);
-	}
 	html {
 		font-size: .7px;
 	}
-
-	.newsletter {
-		transform: translateY(402%);
+	.intro {
+		background-size: auto;
+	}
+	.slider-menu {
+		top: 92%; left: 29%;
+		transform: rotate(0);
 	}
 	.newsletter form {
 		flex-direction: column;
+	}
+	.newsletter input {
+		margin-right: 0;
 	}
 	.newsletter p {
 		text-align: center;
 	}
 	.newsletter input:first-of-type {
 		margin-left: 0;
-	}
+	}/* */
 
 	#posts {
 		margin-top: 275rem;
@@ -717,17 +723,24 @@ nav ul {
 		font-size: 23rem;
 	}
 }
+
+/* 375px */
+
+@media screen and (max-width: 376px) {
+	.slider-menu {
+		left: 21%;
+	}
+}
 /* 321px */
 
 @media screen and (max-width: 321px) {
-	.slider-menu {
-		transform: rotate(-90deg) translate(-85vw, 34vw);
-	}
 	html {
 		font-size: .5px;
 	}
-
-	.newsletter {
-		transform: translateY(560%);
+	.slider-menu {
+		top: 93.5%; left: 24%;
 	}
+	/*.newsletter {
+		transform: translateY(560%);
+	}*/
 }
