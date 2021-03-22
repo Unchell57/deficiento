@@ -3,8 +3,9 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 	<script src="https://kit.fontawesome.com/1c089cc28c.js" crossorigin="anonymous"></script>
-	<script type="text/javascript" src="JS scripts/jQuery.js"></script>
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
 	<script src="JS scripts/isotope.js"></script>
 	<link rel="stylesheet" href="style.css">
 	<title>Home page</title>
@@ -19,7 +20,7 @@
 				<li>menu3</li>
 			</ul>
 		</nav>
-		<h1><img src="img/DECO-title.png" alt="">BLOG</h1>
+		<h1>DECO BLOG</h1>
 		<div class="head-icons">
 			<div class="head-icon">
 				<a href=""><i class="socnet fas fa-rss"></i></a>
@@ -39,7 +40,7 @@
 		</div>
 	</header>
 	<div class="intro">
-		<div class="intro-slider">
+	    <div class="intro-slider">
 			<div class="slider-head">
 				<p>Latest News</p>
 				<h2>BodyBuilding best<br>for you health</h2>
@@ -50,18 +51,18 @@
 					<div class="img-cube active"></div>
 					<div class="img-cube"></div>
 				</div>
-				<span class="arrow">←</span><span class="slider-title">Featured Article</span><span class="arrow">→</span>
+				<span class="slider-title"><span class="arrow">←</span><span class="slider-title-text">Featured Article</span><span class="arrow">→</span></span>
 			</div>
 		</div>
-		<div class="newsletter">
-			<form action="">
-				<p>Signup to<br>Newsletter</p>
-				<input type="text" placeholder="YOUR NAME">
-				<input type="email" placeholder="YOUR EMAIL ADDRESS">
-				<button>SUBSCRIBE NOW</button>
-			</form>
-		</div>
 	</div> <!-- /intro -->
+	<div class="newsletter">
+		<form action="">
+			<p>Signup to<br>Newsletter</p>
+			<input type="text" placeholder="YOUR NAME">
+			<input type="email" placeholder="YOUR EMAIL ADDRESS">
+			<button>SUBSCRIBE NOW</button>
+		</form>
+	</div>
 	<main id="posts">
 		<div class="container">
 			<div class="gutter-sizer"></div> <!-- using for right margins for posts in isotope -->
@@ -265,6 +266,7 @@
 				itemSelector: '.post',
 			
 				masonry: {
+					
 					gutter: '.container .gutter-sizer',
 				},
 			});
