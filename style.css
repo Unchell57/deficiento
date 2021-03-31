@@ -481,11 +481,14 @@ nav ul {
 
 	position: absolute;
 	top: 0; left: 0;
-	right: 0; bottom: 50%;
+	right: 0; bottom: 60%;
 }
 .post.video video {
 	height: 100%;
 	width: 100%;
+}
+.post.video .post-header {
+	margin-top: 75%;
 }
 .post.video .description {
 	color: #464646;
