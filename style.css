@@ -37,12 +37,15 @@ body {
 	justify-content: space-between;
 }
 #head-header h1 {
-	margin: 1em;
+	box-sizing: border-box;
+	margin: 0 10rem;
+	transform: translateY(30%);
 
 	color: #fefefe;
-	font: 400 22rem/29.54rem hindSB;
+	font: 400 22rem/22rem hindSB;
 	text-transform: uppercase;
 	letter-spacing: 3.6px;
+	text-align: center;
 }
 nav ul {
 	display: none;
@@ -62,17 +65,19 @@ nav ul {
 	color: #999;
 }
 .head-icons {
-	display: flex;
+	display: grid;
+	grid-template-columns: repeat(5, 64rem);
 }
 .head-icon {
 	padding: 20rem;
 	border-left: 1px solid #3c3c3c;
+	box-sizing: border-box;
 }
 .socnet {
 	color: #ffffff;
 	font-size: 20rem;
 	line-height: 8rem;
-	transform: translateY(100%);
+	transform: translateY(75%);
 
 	transition: color .2s;
 }
@@ -115,7 +120,7 @@ nav ul {
 	max-width: 100%;
 
 	position: absolute;
-	top: 44%; left: 87%;
+	bottom: 45%; right: -7%;
 	transform: rotate(-90deg);
 }
 .slider-title {
@@ -572,8 +577,7 @@ nav ul {
 	flex-wrap: wrap;
 }
 .instagram img {
-	display: block;
-	max-width: 100%;
+	max-width: 98rem;
 	padding: 0 5rem 5rem 0;
 }
 /* 4ST ELEMENT(COMMENTS) */
@@ -625,7 +629,7 @@ nav ul {
 /* 2400px */
 @media screen and (min-width: 2401px) {
 	.slider-menu {
-		left: 93%;
+		right: -3%;
 	}
 	.intro {
 		background-size: 100%;
@@ -659,9 +663,6 @@ nav ul {
 	body {
 		background: linear-gradient(to top, #f9f9fb 0%, #f9f9fb 94%, #212429 6%);
 	}
-	.slider-menu {
-		left: 83%;
-	}
 	.about .writing {
 		font-size: 23rem;
 	}
@@ -676,9 +677,6 @@ nav ul {
 @media screen and (max-width: 769px) {
 	html {
 		font-size: .8px;
-	}
-	.slider-menu {
-		left: 80%;
 	}
 	#posts {
 		margin-top: 200rem;
@@ -699,14 +697,11 @@ nav ul {
 		background-size: auto;
 	}
 	.slider-menu {
-		top: 92%; left: 29%;
+		bottom: 1%; right: 24%;
 		transform: rotate(0);
 	}
 	.newsletter form {
 		flex-direction: column;
-	}
-	.newsletter input {
-		margin-right: 0;
 	}
 	.newsletter p {
 		text-align: center;
@@ -714,11 +709,12 @@ nav ul {
 	.newsletter input:first-of-type {
 		margin-left: 0;
 	}/* */
-
+	.newsletter input {
+		margin-right: 0;
+	}
 	#posts {
 		margin-top: 275rem;
 	}
-
 	.about .writing {
 		font-size: 23rem;
 	}
@@ -727,8 +723,8 @@ nav ul {
 /* 375px */
 
 @media screen and (max-width: 376px) {
-	.slider-menu {
-		left: 21%;
+	html {
+		font-size: .6px;
 	}
 }
 /* 321px */
@@ -737,10 +733,4 @@ nav ul {
 	html {
 		font-size: .5px;
 	}
-	.slider-menu {
-		top: 93.5%; left: 24%;
-	}
-	/*.newsletter {
-		transform: translateY(560%);
-	}*/
 }
