@@ -22,7 +22,7 @@
 }
 html {
 	font-size: 1px;
-	overflow-x: hidden;
+	/*overflow-x: hidden;*/
 }
 body {
 	padding: 0 50rem;
@@ -51,7 +51,6 @@ nav ul {
 	display: none;
 }
 .menu {
-	height: 100%;
 	box-sizing: border-box;
 	cursor: pointer;
 	font-size: 20rem;
@@ -93,12 +92,12 @@ nav ul {
 	background: url('img/intro-img.webp') no-repeat;
 
 	box-sizing: border-box;
-	width: 100%; min-height: 580px;
+	min-height: 580px;
 }
 
 .slider-head {
 	position: absolute;
-	top: 39%;left: 6%;
+	top: 39%; left: 6%;
 }
 .slider-head p {
 	color: #ffffff;
@@ -117,7 +116,6 @@ nav ul {
 	font: 400 14rem/24rem hindSB;
 	text-transform: uppercase;
 	letter-spacing: 2.8px;
-	max-width: 100%;
 
 	position: absolute;
 	bottom: 45%; right: -7%;
@@ -130,7 +128,6 @@ nav ul {
 	padding: 0 5rem;
 }
 .slider-imgl {
-	width: 100%;
 	position: relative;
 	left: calc(50% - 9%);
 }
@@ -183,7 +180,6 @@ nav ul {
 	font-size: 10rem;
 	line-height: 14rem;
 	transform: translateY(-85%);
-	opacity: 1;
 }
 .newsletter input:first-of-type {
 	margin-left: 35rem;
@@ -217,16 +213,13 @@ nav ul {
 	float: left;
 	box-sizing: border-box;
 	width: 100%;
-	max-width: 360px !important;
-	min-width: 270px !important;
+	max-width: 360px;
+	min-width: 270px;
 	position: relative;
 	font-size: 30px;
 	background-color: #fff;
 	padding: 55rem 32rem 20rem;
 	margin-bottom: 50rem;
-}
-.post:last-child {
-	margin-bottom: 0;
 }
 .post:hover {
 	box-shadow: 0 3px 26px 4px rgba(112, 112, 112, 0.49);
@@ -293,13 +286,15 @@ nav ul {
 	background-color: #d7d7d7;
 	position: relative;
 	left: 30%;
-	top: -8rem;
 	transition: opacity .6s;
 
 	opacity: 0;
 }
 .post-main a::after {
 	top: 8px;
+}
+.post-main a::before {
+	top: -8rem;
 }
 .post-main a:hover {
 	border: none;
@@ -339,8 +334,7 @@ nav ul {
 	font-size: 14rem;
 	line-height: 28rem;
 	letter-spacing: 1.4rem;
-	margin-right: 8rem;
-	margin-left: 8rem;
+	margin: 0 8rem;
 	padding: 2rem;
 	border-radius: 2rem;
 }
@@ -359,8 +353,6 @@ nav ul {
 }
 .post.only-img img {
 	display: block;
-	width: 100%;
-	height: 100%;
 }
 /* QUOTE POST */
 .post.quote {
@@ -393,7 +385,6 @@ nav ul {
 }
 .post.image img {
 	display: block;
-	max-height: 100%;
 	max-width: 100%;
 
 	position: absolute;
@@ -418,7 +409,6 @@ nav ul {
 }
 .imgGallery img {
 	display: block;
-	max-height: 100%;
 	max-width: 100%;
 }
 .post.gallery .post-header {
@@ -462,7 +452,6 @@ nav ul {
 }
 /* APPLICATON POST */
 .application {
-	min-height: 100px;
 	box-shadow: 0 0 0 rgba(232, 232, 232, 0.11);
 	border: 1px solid rgba(221, 221, 221, 0.15);
 	background-color: #212429;
@@ -477,7 +466,6 @@ nav ul {
 }
 .post.video .video-container {
 	max-width: 100%;
-	max-height: 100%;
 
 	position: absolute;
 	top: 0; left: 0;
@@ -512,12 +500,11 @@ nav ul {
 }
 .footer-content {
 	display: flex;
-	flex-flow: row wrap;
+	flex-wrap: wrap;
 	justify-content: space-between;
 	margin-bottom: 60rem;
 }
 .footer-element {
-	box-sizing: border-box;
 	width: 250px;
 	margin-bottom: 10rem;
 }
@@ -540,7 +527,6 @@ nav ul {
 	display: inline-block;
 	color: #fff;
 	font: 400 32rem/21.38rem MrsSaintDelafield;
-	word-break: break-all;
 	transform: rotate(-9deg);
 }
 /* 2ND ELEMENT(TWEETS) */
@@ -571,9 +557,6 @@ nav ul {
 	font: 300 15rem/28rem hindRG;
 }
 /* 3RD ELEMENT(INSTAGRAM) */
-.instagram .main {
-	margin: 0 -5rem -5rem 0;
-}
 .instagram .container {
 	display: flex;
 	flex-wrap: wrap;
@@ -630,6 +613,9 @@ nav ul {
 
 /* 2400px */
 @media screen and (min-width: 2401px) {
+	html {
+		font-size: 1.1px;
+	}
 	.slider-menu {
 		right: -3%;
 	}
@@ -641,21 +627,6 @@ nav ul {
 	}
 }
 
-@media screen and (max-width: 2400px) {
-	html {
-		font-size: 1.1px;
-	}
-}
-/* 1701px */
-
-@media screen and (max-width: 1701px) {
-	
-}
-/* 1441px */
-
-@media screen and (max-width: 1441px) {
-	
-}
 /* 1025px */
 
 @media screen and (max-width: 1080px) {
@@ -669,11 +640,7 @@ nav ul {
 		font-size: 23rem;
 	}
 }
-/* 982px */
 
-@media screen and (max-width: 979px) {
-	
-}
 /* 769px */
 
 @media screen and (max-width: 769px) {
@@ -684,17 +651,14 @@ nav ul {
 		margin-top: 200rem;
 	}
 }
-/* 650px */
 
-@media screen and (max-width: 650px) {
-	
-}
 /* 426px */
 
 @media screen and (max-width: 426px) {
 	html {
 		font-size: .7px;
 	}
+
 	.intro {
 		background-size: auto;
 	}
@@ -702,6 +666,7 @@ nav ul {
 		bottom: 1%; right: 24%;
 		transform: rotate(0);
 	}
+
 	.newsletter form {
 		flex-direction: column;
 	}
@@ -710,7 +675,7 @@ nav ul {
 	}
 	.newsletter input:first-of-type {
 		margin-left: 0;
-	}/* */
+	}
 	.newsletter input {
 		margin-right: 0;
 	}
