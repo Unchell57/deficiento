@@ -566,7 +566,7 @@ nav ul {
 }
 .instagram img {
 	max-width: 98rem;
-	height: 100%;
+	max-height: 100%;
 	padding: 0 5rem 5rem 0;
 }
 /* 4ST ELEMENT(COMMENTS) */
