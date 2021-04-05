@@ -76,7 +76,6 @@ nav ul {
 	color: #ffffff;
 	font-size: 20rem;
 	line-height: 8rem;
-	transform: translateY(75%);
 
 	transition: color .2s;
 }
