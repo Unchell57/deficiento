@@ -353,6 +353,7 @@ nav ul {
 }
 .post.only-img img {
 	display: block;
+	max-width: 100%;
 }
 /* QUOTE POST */
 .post.quote {
