@@ -21,6 +21,7 @@
 	src: url('font awesome/fonts/FontAwesome-webfont.ttf');
 }
 html {
+	display: none;
 	font-size: 1px;
 	overflow-x: hidden;
 }
