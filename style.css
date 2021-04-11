@@ -22,7 +22,7 @@
 }
 html {
 	font-size: 1px;
-	/*overflow-x: hidden;*/
+	overflow-x: hidden;
 }
 body {
 	padding: 0 50rem;
