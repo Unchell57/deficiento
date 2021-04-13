@@ -563,8 +563,8 @@ nav ul {
 	flex-wrap: wrap;
 }
 .instagram img {
-	width: 100%;
-	padding: 0 5rem 5rem 0;
+	max-width: 100%;
+	/*padding: 0 5rem 5rem 0;*/
 }
 /* 4ST ELEMENT(COMMENTS) */
 .comment-title,
