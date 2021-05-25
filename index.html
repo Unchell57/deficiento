@@ -3,11 +3,10 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta http-equiv="Pragma" content="no-cache" />
 	<link rel="stylesheet" href="style.css">
 	<script src="https://kit.fontawesome.com/1c089cc28c.js" crossorigin="anonymous"></script>
-	<script type="text/javascript" src="JS scripts/jQuery.js"></script>
-	<script src="JS scripts/isotope.js"></script>
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+	<script src="JS-Scripts/isotope.js"></script>
 	<title>Home page</title>
 </head>
 <body>
@@ -56,27 +55,27 @@
 		</div>
 	</div> <!-- /intro -->
 	<div class="newsletter">
-		<form action="">
+		<form>
 			<p>Signup to<br>Newsletter</p>
-			<input type="text" placeholder="YOUR NAME">
-			<input type="email" placeholder="YOUR EMAIL ADDRESS">
+			<input type="text" name="name" placeholder="YOUR NAME">
+			<input type="email" name="email" placeholder="YOUR EMAIL ADDRESS">
 			<button>SUBSCRIBE NOW</button>
 		</form>
 	</div>
 	<main id="posts">
 		<div class="container">
 			<div class="gutter-sizer"></div> <!-- sizer is used for right margins for posts in isotope -->
-			<article class="post text">
+			<div class="post text">
 				<div class="post-type-icon"><i class="fas fa-pen"></i></div>
 				<header class="post-header">	
 					<p>TRAVELLING</p>
 					<h3>TRAVEL BEST ADVENTURE</h3>
 					<p>JANUARY 25, 2016</p>
 				</header>
-				<main class="post-main">
+				<div class="post-main">
 					<p>Lorem ipsum doloirs sit amet, csatetur adipisicin, sed does eiusmod tehampor incididunt uts laboasre et dolhvaliqua. Ut enim  vem, nostrasuaations ullamco labiosi ut saaliquip exoi asea comoodo Disco choice is the have great work.</p>
 					<a href="#">READ MORE</a>
-				</main>
+				</div>
 				<aside class="post-aside">
 					<span class="post-comments"><i class="post-icon far fa-comments"></i>NO COMMENT</span>
 					<span class="post-icons">
@@ -86,25 +85,25 @@
 						<a href="#"><i class="post-icon fab fa-pinterest"></i></a>
 					</span>
 				</aside>
-			</article>
+			</div>
 
 			<div class="post only-img">
 				<img src="img/posts/placeholder360x513.png" alt="post with only image">
 			</div>
 
-			<article class="post text-without-comments">
+			<div class="post text-without-comments">
 				<header class="post-header">	
 					<p>TRAVELLING</p>
 					<h3>TRAVEL BEST ADVENTURE</h3>
 					<p>JANUARY 25, 2016</p>
 				</header>
-				<main class="post-main">
+				<div class="post-main">
 					<p>Lorem ipsum doloirs sit amet, csatetur adipisicin, sed does eiusmod tehampor incididunt uts laboasre et dolhvaliqua. Ut enim  vem, nostrasuaations ullamco labiosi ut saaliquip exoi asea comoodo tehampor incididunt uts laboasre etsa iusmod tehampor incididunt uts havlaboasre et dolhvaliqua. Ut enim  vem, choice is the have great work.</p>
 					<a href="#">READ MORE</a>
-				</main>
-			</article>
+				</div>
+			</div>
 
-			<article class="post image">
+			<div class="post image">
 				<img src="img/posts/2-1/post2-1img.jpg" alt="beautiful-sunrise">
 				<div class="post-type-icon"><i class="far fa-image"></i></div>
 				<header class="post-header">
@@ -112,9 +111,9 @@
 					<h3>STANDART IMAGE POST</h3>
 					<p>JANUARY 25, 2016</p>
 				</header>
-				<main class="post-main">
+				<div class="post-main">
 						<a href="#">READ MORE</a>
-				</main>
+				</div>
 				<aside class="post-aside">
 					<span class="post-comments"><i class="post-icon far fa-comments"></i>06 COMMENT</span>
 					<span class="post-icons">
@@ -124,19 +123,19 @@
 						<a href="#"><i class="post-icon fab fa-pinterest"></i></a>
 					</span>
 				</aside>
-			</article>
+			</div>
 
-			<article class="post quote">
+			<div class="post quote">
 				<div class="post-type-icon"><i class="fas fa-quote-left"></i></div>
-				<main class="post-main">
+				<div class="post-main">
 					<blockquote class='main-quote'>
 						As per Lorm ipsum dolor sitamet, consectetur adipisicing elits, sed do Now eiusmod tempor havei ut labores et dolore magna aliqusa. Ut wenim ad minim veniam, quis its a snostrud now is the ullamco aliquip ex ea commodo.
 					</blockquote>
 					<p>Nathalia Alexy</p>
-				</main>
-			</article>
+				</div>
+			</div>
 
-			<article class="post video">
+			<div class="post video">
 				<div class="post-type-icon"><i class="fas fa-film"></i></div>
 				<div class="video-container">
 					<video src="video/snowman.mp4" controls preload></video>
@@ -146,7 +145,7 @@
 					<h3>VIDEO IMAGE POST STYLE</h3>
 					<p>JANUARY 25, 2016</p>
 				</header>
-				<section class="attractive">
+				<div class="attractive">
 					<p class="description">A CONAN staffer is learning the rules of the in  road, with a little help from Look out, fellow drivers!</p>
 					<aside class="post-aside">
 						<span class="post-comments"><i class="post-icon far fa-comments"></i>NO COMMENT</span>
@@ -157,20 +156,20 @@
 							<a href="#"><i class="post-icon fab fa-pinterest"></i></a>
 						</span>
 					</aside>
-				</section>
-			</article>
+				</div>
+			</div>
 
-			<article class="post text">
+			<div class="post text">
 				<div class="post-type-icon"><i class="fas fa-pen"></i></div>
 				<header class="post-header">	
 					<p>FASHION</p>
 					<h3>SIMPLE POST STYLE</h3>
 					<p>JANUARY 02, 2016</p>
 				</header>
-				<main class="post-main">
+				<div class="post-main">
 					<p>Lorem ipsum doloirs sit amet, csatetur adipisicin, sed does eiusmod tehampor choice is the have great work.</p>
 					<a href="#">READ MORE</a>
-				</main>
+				</div>
 				<aside class="post-aside">
 					<span class="post-comments"><i class="post-icon far fa-comments"></i>NO COMMENT</span>
 					<span class="post-icons">
@@ -180,9 +179,9 @@
 						<a href="#"><i class="post-icon fab fa-pinterest"></i></a>
 					</span>
 				</aside>
-			</article>
+			</div>
 
-			<article class="post gallery">
+			<div class="post gallery">
 				<div class="post-type-icon"><i class="far fa-image"></i></div>
 				<div class="imgGallery">
 					<img src="img/posts/3-2/img1.jpg" alt="image">
@@ -196,9 +195,9 @@
 					<h3>AWESOME GALLERY POST</h3>
 					<p>JANUARY 19, 2016</p>
 				</header>
-				<main class="post-main">
+				<div class="post-main">
 					<a href="#">READ MORE</a>
-				</main>
+				</div>
 				<aside class="post-aside">
 					<span class="post-comments"><i class="post-icon far fa-comments"></i>02 COMMENT</span>
 					<span class="post-icons">
@@ -208,34 +207,34 @@
 						<a href="#"><i class="post-icon fab fa-pinterest"></i></a>
 					</span>
 				</aside>
-			</article>
+			</div>
 
-			<article class="post link">
+			<div class="post link">
 				<div class="post-type-icon"><i class="fas fa-link"></i></div>
-				<main>
+				<div>
 					<a href="#">http://www.abcdomainname.com/screen/discovery</a>
-				</main>
-			</article>
+				</div>
+			</div>
 					
-			<article class="post application">
+			<div class="post application">
 				<div class="post-type-icon"><i class="fab fa-accessible-icon"></i></div>
-			</article>
+			</div>
 
 			<div class="post only-img">
 				<img src="img/posts/placeholder360x513.png" alt="post with only image">
 			</div>
 
-			<article class="post text">
+			<div class="post text">
 				<div class="post-type-icon"><i class="fas fa-pen"></i></div>
 				<header class="post-header">	
 					<p>LIFE STYLE</p>
 					<h3>WITHOUT IMAGE POST</h3>
 					<p>JANUARY 07, 2016</p>
 				</header>
-				<main class="post-main">
+				<div class="post-main">
 					<p>Lorem ipsum doloirs sit amet, csatetur adipisicin, sed does eiusmod tehampor incididunt uts laboasre et dolhvaliqua. Ut enim  vem, nostrasuaations ullamco labiosi ut saaliquip exoi asea comoodo Disco choice is the have great work.</p>
 					<a href="#">READ MORE</a>
-				</main>
+				</div>
 				<aside class="post-aside">
 					<span class="post-comments"><i class="post-icon far fa-comments"></i>NO COMMENT</span>
 					<span class="post-icons">
@@ -245,19 +244,19 @@
 						<a href="#"><i class="post-icon fab fa-pinterest"></i></a>
 					</span>
 				</aside>
-			</article>
+			</div>
 
-			<article class="post music">
+			<div class="post music">
 				<div class="post-type-icon"><i class="fas fa-music"></i></div>
 				<header class="post-header">	
 					<p>AUDIO MUSIC</p>
 					<h3>BEST AUDIO PLAYER POST</h3>
 					<p>DECEMBER 29, 2015</p>
 				</header>
-				<main>
+				<div>
 					<div class="circle"></div>
-				</main>
-			</article>
+				</div>
+			</div>
 
 
 		</div> <!-- /container -->

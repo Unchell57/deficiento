@@ -1,0 +1,205 @@
+@import url(../../reset.css);
+
+@font-face {
+	font-family: hindRG;
+	src: url(../../fonts/hind/Hind-Regular.ttf);
+}
+@font-face {
+	font-family: fontAwesome;
+	src: url('../../font awesome/fonts/FontAwesome-webfont.ttf');
+}
+@font-face {
+	font-family: MontserratRG;
+	src: url('../../fonts/Montserrat/Montserrat-Regular.ttf');
+}
+@font-face {
+	font-family: MontserratBL;
+	src: url('../../fonts/Montserrat/Montserrat-Bold.ttf');
+}
+
+html {
+	font-size: 1px;
+}
+body {
+	background: #f9f9fb;
+}
+.clearFix {
+	clear: both;
+}
+
+.errorContainer {
+	text-align: center;
+}
+
+/* HEADER */
+
+.errorHeader {
+	margin-top: 11%;
+}
+.errorHeader h1 {
+	position: relative;
+	color: #363636;
+	font: 700 253rem/253rem MontserratBL;
+	transform: scale(.96);
+}
+/* сделай их этого свгэшку и попробуй с ней */
+.errorHeader p {
+	position: absolute;
+	padding: 2rem 12.4rem;
+	min-width: 32.9%;
+	margin-top: -7.1%;
+	margin-left: 32.9%;
+
+	background: #fff; 
+
+	color: #212121;
+	font: 500 15rem/20rem hindRG;
+	text-transform: uppercase;
+	letter-spacing: 12rem;
+}
+
+/* SEARCH */
+
+.errorSearch {
+	margin: .7% 0 0 28.8%;
+}
+.errorSearch input,
+.errorSearch input::placeholder {
+	color: #363636;
+	font: 400 11rem/24rem hindRG;
+	letter-spacing: 0.17rem;
+}
+.errorSearch input {
+	float: left;
+
+	box-sizing: border-box;
+	width: 46%;
+	padding: 7rem 18rem;
+
+	border: 1px solid #ccc;
+	background-color: #fff;
+}
+.errorSearch button {
+	float: left;
+	padding: 7.25rem 43rem;
+
+	color: #fff;
+	font: 700 11rem/24rem MontserratBL;
+	letter-spacing: .4rem;
+	text-transform: uppercase;
+
+	border: 1px solid #ccc;
+	background-color: #363636;
+}
+
+/* APOLOGIZE */
+
+.errorApologize {
+	margin-top: 23rem;
+}
+.errorApologize h2 {
+	font: 700 24rem/30rem MontserratBL;
+	color: #363636;
+	letter-spacing: .36rem;
+}
+.errorApologize p {
+	margin-top: 4rem;
+
+	font: 700 11rem/11rem MontserratBL;
+	color: #999;
+	letter-spacing: 0.12rem;
+}
+
+/* BACKLINK */
+
+.errorBacklink {
+	margin-top: -2rem;
+}
+
+.errorBacklink a {
+	margin-left: -2rem;
+
+	color: #363636;
+	text-transform: uppercase;
+	font: 700 11rem/24rem MontserratBL;
+	letter-spacing: 0.17rem;
+	text-decoration: none;
+}
+
+.errorBacklink a::before {
+	content: "\f015";
+	display: inline-block;
+	margin-right: 6rem;
+
+	color: #999;
+	font: 400 12rem/60rem "FontAwesome";
+}
+
+/* MEDIA */
+
+/* 2560 */
+@media screen and (min-width: 2559px) {
+	html {
+		font-size: 1.9px;
+	}
+	.errorHeader p {
+		min-width: 35.5%;
+		margin-top: -7.65%;
+		margin-left: 31.5%;
+	}
+}
+/* 1024 */
+@media screen and (max-width: 1025px) {
+	.errorHeader p {
+		min-width: 47%;
+		margin-top: -10%;
+		margin-left: 25.5%;
+	}
+}
+/* 768 */
+@media screen and (max-width: 769px) {
+	.errorHeader p {
+		min-width: 63%;
+		margin-top: -13.45%;
+		margin-left: 17%;
+	}
+}
+/* 425 */
+@media screen and (max-width: 426px) {
+	html {
+		font-size: .7px;
+	}
+	.errorHeader p {
+		min-width: 79%;
+		margin-top: -17%;
+		margin-left: 9%;
+	}
+	.errorSearch {
+		margin-left: 10.5%;
+	}
+	.errorSearch input {
+		width: 64.5%;
+	}
+}
+/* 375 */
+@media screen and (max-width: 376px) {
+	.errorHeader p {
+		min-width: 88.6%;
+		margin-top: -19%;
+		margin-left: 4%;
+	}
+}
+/* 320 */
+@media screen and (max-width: 321px) {
+	.errorHeader h1 {
+		font-size: 222rem;
+	}
+	.errorHeader p {
+		min-width: 90%;
+		margin-top: -23.5%;
+		margin-left: 3%;
+	}
+	.errorSearch {
+		margin-left: 4%;
+	}
+}*/
